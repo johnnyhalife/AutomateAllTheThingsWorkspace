@@ -8,8 +8,7 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
+	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', ['clean', 'copy']);
 };
