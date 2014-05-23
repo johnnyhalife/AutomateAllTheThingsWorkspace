@@ -20,3 +20,4 @@ var pages = require('./lib/resources/pages');
 app.get("/", pages.index);
 
 app.listen(process.env.PORT || 4000);
+console.log("Application server running on %s", process.env.PORT || 4000);
